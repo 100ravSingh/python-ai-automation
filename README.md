@@ -1,5 +1,3 @@
----
-
 # ✅ **1. `.github/copilot-instructions.md` — GLOBAL BEHAVIOR BRAIN**
 
 ### **What it does**
@@ -137,5 +135,3 @@ Together they create a **full Copilot programming environment**:
 **1. Copilot Instructions → How Copilot should behave always**
 **2. Copilot Agents → What expert Copilot should become**
 **3. Prompts → What exact pattern Copilot should follow for each type of task**
-
----
