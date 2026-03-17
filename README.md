@@ -33,32 +33,26 @@ Even without prompting, Copilot will:
 
 ---
 
-# ✅ **2. `.github/copilot-agents.md` — SPECIALIZED MINI-AI PERSONAS**
+# ✅ **2. `.github/agents/*.agent.md` - GitHub Copilot Custom Agents**
 
-### **What it does**
+This repository defines a set of Copilot Chat agents, each with a focused role and a set of behavior rules.
 
-Defines **different task-specific Copilot personas** (called agents).
+## Available agents
 
-Examples:
+- [PythonAutomationAgent](./agents/PythonAutomationAgent.agent.md)
+- [NodeApiAgent](./agents/NodeApiAgent.agent.md)
+- [ReactFrontendAgent](./agents/ReactFrontendAgent.agent.md)
+- [DevOpsCICDAgent](./agents/DevOpsCICDAgent.agent.md)
+- [DataSQLAgent](./agents/DataSQLAgent.agent.md)
+- [AIMLAgent](./agents/AIMLAgent.agent.md)
+- [DebugAgent](./agents/DebugAgent.agent.md)
+- [TestAgent](./agents/TestAgent.agent.md)
+- [DocAgent](./agents/DocAgent.agent.md)
+- [RefactorAgent](./agents/RefactorAgent.agent.md)
+- [ArchitectureAdvisor](./agents/ArchitectureAdvisor.agent.md)
+- [UTDocAgent](./agents/UTDocAgent.agent.md)
 
-* PythonAutomationAgent → writes automation scripts
-* NodeApiAgent → builds Node.js APIs
-* ReactFrontendAgent → writes React components
-* DevOpsCICDAgent → creates GitHub Actions CI/CD
-* DebugAgent → finds bugs
-* TestAgent → generates unit tests
-
-Each persona has:
-
-* A role
-* Responsibilities
-* Behavior rules
-* Output format
-
-### **How it works**
-
-In Copilot Chat, you can call an agent like this:
-
+> Each agent file contains the role, responsibilities, behavior rules, and output format.
 ```
 @PythonAutomationAgent create a script that processes CSV files daily
 ```
