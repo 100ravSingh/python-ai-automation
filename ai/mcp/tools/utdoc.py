@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class UTDocTool(BaseTool):
     name = "UTDocAgent"
+    description = "Generates a unit test documentation snippet or recommendation based on a prompt describing the tests or code under test."
 
     def run(self, prompt: str) -> str:
         """Generate unit test documentation guidance.

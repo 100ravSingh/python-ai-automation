@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class AIMLTool(BaseTool):
     name = "AIMLAgent"
+    description = "Generates AI/ML code scaffolds or recommendations based on a prompt describing the modeling or integration task."
 
     def run(self, prompt: str) -> str:
         """Generate a starter AI/ML script recommendation.

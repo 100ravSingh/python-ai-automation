@@ -2,6 +2,7 @@ from ai.mcp.tools.base import BaseTool
 
 class PythonAutomationTool(BaseTool):
     name = "PythonAutomationAgent"
+    description = "Generates a basic Python automation script based on a prompt describing the task."
 
     def run(self, prompt: str) -> str:
         """

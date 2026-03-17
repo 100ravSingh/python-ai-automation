@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class ArchitectureAdvisorTool(BaseTool):
     name = "ArchitectureAdvisor"
+    description = "Generates architecture guidance or system design suggestions based on a prompt describing the system or requirement."
 
     def run(self, prompt: str) -> str:
         """Generate architecture guidance or system design suggestions.

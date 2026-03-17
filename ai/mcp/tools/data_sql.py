@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class DataSQLTool(BaseTool):
     name = "DataSQLAgent"
+    description = "Generates a starter SQL query or data workflow recommendation based on a prompt describing the data task."
 
     def run(self, prompt: str) -> str:
         """Generate a starter SQL query or data workflow recommendation.

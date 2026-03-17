@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class TestTool(BaseTool):
     name = "TestAgent"
+    description = "Generates a starter test plan or test code snippet based on a prompt describing what should be tested."
 
     def run(self, prompt: str) -> str:
         """Generate a starter test plan or test code snippet.

@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class NodeApiTool(BaseTool):
     name = "NodeApiAgent"
+    description = "Generates a starter Node.js/Express API recommendation based on a prompt describing the desired API behavior."
 
     def run(self, prompt: str) -> str:
         """Generate a starter Node.js/Express API recommendation.

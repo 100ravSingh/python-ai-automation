@@ -129,3 +129,24 @@ Together they create a **full Copilot programming environment**:
 **1. Copilot Instructions → How Copilot should behave always**
 **2. Copilot Agents → What expert Copilot should become**
 **3. Prompts → What exact pattern Copilot should follow for each type of task**
+
+---
+
+# AI Agent Toolkit (optional)
+
+This repo also includes a small **agent toolkit** under `ai/mcp/` that lets you run the same agent personalities programmatically.
+
+- `ai/mcp/tools/__init__.py` registers a set of tools (one per agent).
+- Each tool lives in `ai/mcp/ai/<AgentName>.py` and implements `BaseTool.run(prompt: str) -> str`.
+- You can list/run tools via `ai/mcp/server.py`.
+
+### Quick start (Python)
+
+```py
+from ai.mcp import server
+
+print(server.list_tools())
+print(server.run_tool('PythonAutomationAgent', 'create a small backup script'))
+```
+
+> See `ai/README.md` for more details.

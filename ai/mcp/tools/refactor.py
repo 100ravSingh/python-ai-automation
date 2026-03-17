@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class RefactorTool(BaseTool):
     name = "RefactorAgent"
+    description = "Generates refactoring suggestions or code improvements based on a prompt describing the code or refactor need."
 
     def run(self, prompt: str) -> str:
         """Generate refactoring suggestions or code improvements.

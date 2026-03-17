@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class ReactFrontendTool(BaseTool):
     name = "ReactFrontendAgent"
+    description = "Generates a starter React component or UI guidance based on a prompt describing the UI feature."
 
     def run(self, prompt: str) -> str:
         """Generate a starter React component or UI guidance.

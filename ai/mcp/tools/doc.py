@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class DocTool(BaseTool):
     name = "DocAgent"
+    description = "Generates a documentation snippet or recommendation based on a prompt describing the doc need."
 
     def run(self, prompt: str) -> str:
         """Generate a documentation snippet or recommendation.

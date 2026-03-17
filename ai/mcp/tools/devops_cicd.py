@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class DevOpsCICDTool(BaseTool):
     name = "DevOpsCICDAgent"
+    description = "Generates a starter CI/CD workflow description based on a prompt describing the deployment or pipeline need."
 
     def run(self, prompt: str) -> str:
         """Generate a starter CI/CD workflow description.

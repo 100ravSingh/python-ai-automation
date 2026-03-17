@@ -3,6 +3,7 @@ from ai.mcp.tools.base import BaseTool
 
 class DebugTool(BaseTool):
     name = "DebugAgent"
+    description = "Generates a debugging analysis or troubleshooting guidance based on a prompt describing the error or issue."
 
     def run(self, prompt: str) -> str:
         """Generate a debugging analysis or troubleshooting guidance.
