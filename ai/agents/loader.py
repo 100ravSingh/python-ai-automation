@@ -1,11 +1,7 @@
 import os
 import re
 
-
-def load_agents(agents_dir: str):
-    """
-    Load agent names from .github/agents/*.agent.md
-    """
+def load_agents(agents_dir):
     agents = []
 
     for file in os.listdir(agents_dir):
@@ -15,8 +11,8 @@ def load_agents(agents_dir: str):
             with open(path, "r") as f:
                 content = f.read()
 
-            match = re.search(r"## Agent:\s*(\w+)", content)
+            match = re.search(r"#+\s*Agent:\s*(\w+)", content)
             if match:
-                agents.append(match.group(1))
+                agents.append(match.group(1).strip())
 
     return agents

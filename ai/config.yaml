@@ -1,0 +1,25 @@
+paths:
+  agents_dir: .github/agents/
+
+pipeline:
+  - PythonAutomationAgent
+  - TestAgent
+  - UTDocAgent
+  - DevOpsCICDAgent
+
+routing:
+  PythonAutomationAgent:
+    input: input
+    output: code
+
+  TestAgent:
+    input: code
+    output: tests
+
+  UTDocAgent:
+    input: tests
+    output: ut_doc
+
+  DevOpsCICDAgent:
+    input: code
+    output: devops
